@@ -1,27 +1,60 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet", href="css/style.css"> <!--Import style-->
-
+        <link rel="stylesheet", href="css/style.css"> <!--Import styles.css-->
+        <link rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"> <!--Import more fonts from font-awesome-->
         <meta charset="UTF-8"> <!--Import all unicodes-->
+        <meta http-equiv="X-UA-Compatible", content="IE=edge">
         <meta name="viewport", content="width=device-width, initial-scale=1.0"> <!--Optimise page for different devices-->
-
         <title>Home | Vijay Portfolio</title>
     </head>
     <body>
-        <section class="navigation">
-            <nav> <!--Navigation List-->
-                <ul>
-                    <li><a href="home.html"><div>Home</div></a></li>
-                    <li><a href="portfolio.html"><div>Portfolio</div></a></li>
-                    <li><a href="about.html"><div>About</div></a></li>
-                    <li><a href="services.html"><div>Services</div></a></li>
-                    <li><a href="contact.html"><div>Contact</div></a></li>
-                </ul>
-            </nav>
-        </section>
         <section>
-            <h1>Hi I'm a Web Application Designer.</h1>
+            <input type="checkbox", id="check">
+            <header>
+                <img src="images/logo.png">
+                <div class="divNav"> <!--Navigation-->
+                    <nav>
+                        <ul>
+                            <li><a href="home.html"><div>Home</div></a></li>
+                            <li><a href="portfolio.html"><div>Portfolio</div></a></li>
+                            <li><a href="about.html"><div>About</div></a></li>
+                            <li><a href="services.html"><div>Services</div></a></li>
+                            <li><a href="contact.html"><div>Contact</div></a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <label for="check", id="bar_buttons">
+                    <i class="fa-solid fa-bars menu-button"></i>
+                    <i class="fa-solid fa-bars close-button"></i>
+                </label>
+            </header>
+            <div class="divContent"> <!--Content-->
+                <div class="divInfo"> <!--Info-->
+                    <h2>Personal<br><span>Portfolio</span></h2>
+                    <p>
+                        Welcome to my website, where creativity meets innovation. Here, you will find a curated collection of my work that
+                        showcases my skills and passion for design and development. From stunning visuals to seamless user experiences,
+                        each project reflects my commitment to excellence and attention to detail. Whether you're looking for inspiration
+                        or considering collaboration, I invite you to explore my projects and get to know my journey as a creative
+                        professional. Let's connect and bring your ideas to life!
+                    </p>
+                    <br>
+                    <a href="about.html", class="info-button">More Info</a>
+                </div>
+                <br><br><br><br><br>
+                <div class="divMedia"> <!--Media-->
+                    <a href="https://www.linkedin.com/in/vijay-k-b63105328", target="_blank", id="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/vkumar251", target="_blank", id="github"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <footer>
+                <div class="divFooter"> <!--Footer-->
+                    <a href="https://www.linkedin.com/in/vijay-k-b63105328", target="_blank", id="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/vkumar251", target="_blank", id="github"><i class="fa-brands fa-github"></i></a>
+                    <p>Copyright &copy 2025. All rights reserved.</p>
+                </div>
+            </footer>
         </section>
     </body>
 </html>

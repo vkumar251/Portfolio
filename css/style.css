@@ -1,54 +1,250 @@
-/* General */
-body
-{
-    background-color: rgb(43, 2, 19);
+/* GENERAL */
+
+*
+{   
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: Arial;
-    color: white;
+}
+
+/* STRUCTURE */
+
+header
+{
+    position: relative;
+    top: 0;
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 section
 {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: rgb(0, 28, 29); /* To be switched to background: url(image url.jpg); */
+    background-size: cover;
+    background-position: center;
 }
 
-/* Navigation */
-.navigation
+/* NAVIGATION */
+
+header .divNav a /* Navigation anchors */
 {
-    background-color: rgb(29, 29, 29);
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    color: white;
+    text-decoration: none; /* Remove all underlines */
+    font-weight: 500;
+    letter-spacing: 3px; /* Adjust spacing between characters */
+    border-radius: 20px; /* Adjust curves between borders */
+
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+    transition: 0.3s;
+    transition-property: background;
 }
-nav ul
+header .divNav a:not(:last-child)
 {
-    list-style: none; /* Remove bullets from unordered list */
-    display: flex; /* Align listed items to one line */
-    justify-content: right; /* Position navigation to the right */
-    gap: 40px; /* Add spacing between each link */
+    margin-right: 30px;
 }
-nav a
+header .divNav nav ul
 {
-    text-decoration: none; /* Remove underlines from hyperlinks */
-    color: white; /* Change text colour */
+    list-style: none; /* Remove bullets */
+    display: flex; /* Align all listed items to one line */
+    gap: 40px; /* Align spacing */
+}
+header .divNav nav div
+{
+    background-color:rgb(0, 46, 10);
     padding: 10px;
-}
-nav a:hover
-{
-    color: black;
-}
-nav div
-{
-    background-color: rgb(66, 66, 66);
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
 
     border-color: white;
     border-width: 2px;
     border-style: solid;
+    border-radius: 0;
+}
+header .divNav nav div:hover
+{
+    color: black;
+    background-color: rgb(0, 90, 20);
+}
+header #bar_buttons
+{
+    color: white;
+}
+label
+{
+    display: block;
+    font-size: 25px;
+    cursor: pointer; /* Change cursor symbol when hovered over */
+}
+label:hover
+{
+    color: black;
+}
+label .menu-button
+{
+    position: absolute;
+}
+label .close-button
+{
+    position: none;
+}
+
+/* CONTENT */
+
+.divContent
+{
+    max-width: 650px;
+    margin: 60px 100px;
+}
+
+/* INFO */
+
+.divContent .divInfo h2
+{
+    color: rgb(163, 163, 163);
+    font-size: 55px; /* Adjust size */
+    text-transform: uppercase; /* Capitalise all letters */
+    font-weight: 800; /* Adjust text boldness */
+    letter-spacing: 2px; /* Adjust spacing between characters */
+    line-height: 60px; /* Adjust spacing between new lines */
+    margin-bottom: 30px; /* Adjust spacing between header and paragraph */
+}
+.divContent .divInfo h2 span
+{
+    color: rgb(163, 163, 163);
+}
+.divContent .divInfo p
+{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.divContent .divInfo .info-button
+{
+    color: black;
+    background-color: rgb(255, 68, 0);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 15px 50px;
+    transform: 0.3s;
+    position: absolute;
+    transition-property: background;
+
+    border-color: grey;
+    border-width: 2px;
+    border-style: solid;
     border-radius: 10px;
 }
-nav div:hover
+.divContent .divInfo .info-button:hover
 {
-    background-color: rgb(194, 194, 194);
+    color: white;
+    background-color: rgb(78, 21, 0);
+}
+
+/* MEDIA */
+
+.divContent .divMedia
+{
+    display: flex;
+    margin: auto;
+}
+.divContent .divMedia a
+{
+    position: relative;
+    font-size: 35px;
+    transition: 0.3s;
+    transition-property: all;
+}
+.divContent .divMedia a:not(:last-child)
+{
+    margin-right: 30px; /* Adjust spacing between icons */
+}
+.divMedia a:hover
+{
+    transform: scale(2.0); /* Enlarge icons when hovered */
+}
+.divContent .divMedia #linkedin
+{
+    color: #0077B5;
+}
+.divContent .divMedia #github
+{
+    color: #7c7c7c;
+}
+
+/* FOOTER */
+.divFooter
+{
+    text-align: center;
+    width: 100%;
+    padding: 1.4rem;
+    background-color: rgb(71, 71, 71);
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divFooter a
+{
+    position: relative;
+    font-size: 25px;
+    transition: 0.3s;
+    transition-property: all;
+}
+.divFooter a:not(:last-child)
+{
+    margin-right: 30px; /* Adjust spacing between icons */
+}
+.divFooter a:hover
+{
+    transform: scale(2.0); /* Enlarge icons when hovered */
+}
+.divFooter #linkedin
+{
+    color: #0077B5;
+}
+.divFooter #github
+{
+    color: #7c7c7c;
+}
+
+/* MISC */
+
+@media(max-width:960px)
+{
+    header .divNav
+    {
+        display: none;
+    }
+}
+#check
+{
+    z-index: 3;
+    display: none;
+}
+#check:checked ~ header label .menu-button
+{
+    display: none;
+}
+#check:checked ~ header label .close-button
+{
+    z-index: 2;
+    display: block;
+    position: fixed;
 }
