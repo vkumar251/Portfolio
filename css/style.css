@@ -1,0 +1,54 @@
+/* General */
+body
+{
+    background-color: rgb(43, 2, 19);
+    font-family: Arial;
+    color: white;
+}
+section
+{
+}
+
+/* Navigation */
+.navigation
+{
+    background-color: rgb(29, 29, 29);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+nav ul
+{
+    list-style: none; /* Remove bullets from unordered list */
+    display: flex; /* Align listed items to one line */
+    justify-content: right; /* Position navigation to the right */
+    gap: 40px; /* Add spacing between each link */
+}
+nav a
+{
+    text-decoration: none; /* Remove underlines from hyperlinks */
+    color: white; /* Change text colour */
+    padding: 10px;
+}
+nav a:hover
+{
+    color: black;
+}
+nav div
+{
+    background-color: rgb(66, 66, 66);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+}
+nav div:hover
+{
+    background-color: rgb(194, 194, 194);
+}
