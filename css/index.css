@@ -1,0 +1,65 @@
+/* ------------------------ General ------------------------ */
+
+*
+{
+    margin: 0;      /* Reset margins */
+    padding: 0;     /* Reset padding */
+    border: 0;      /* Reset border */
+}
+body
+{
+    font-family: Arial; /* Set default font type */
+    background-color: rgb(23, 0, 36); /* Set page background colour */
+    color: white; /* Set page text colour */
+}
+
+/* ------------------------ Navigation ------------------------ */
+
+.nav-container 
+{
+    display: flex; /* Make navigation container as flexbox */
+    justify-content: space-between; /* Add equal spacing between nav items */
+    background-color: #000147; /* Set background colour */
+
+    /* Add bottom border around container */
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    border-bottom-color: grey;
+}
+.nav-item 
+{
+    flex: 1; /* Adjust each listed item to fit the screen */
+    text-align: center; /* Align each nav item to centre */
+    padding: 15px 0px; /* Add padding vertically */
+    transition: background-color 0.5s ease; /* Add transition when changing colour */
+
+    /* Add right borders around listed items */
+    border-right-width: 4px;
+    border-right-style: solid;
+    border-right-color: grey;
+    
+}
+
+.nav-item:last-child 
+{
+    border-right: none; /* Remove right border from last listed item */
+}
+
+.nav-item a 
+{
+    text-decoration: none; /* Remove underline from hyperlinks */
+    color: white; /* Set hyperlink text colour */
+    font-weight: 700; /* Make hyperlinks bold */
+    font-size: 20px; /* Set font size */
+    display: block; /* Make the anchor fill the entire nav item */
+}
+
+.nav-item:hover 
+{
+    background-color: rgb(0, 9, 131); /* Change background colour when */
+}
+
+.nav-item:hover a 
+{
+    color: white; /* Ensure text remains white when hovering */
+}

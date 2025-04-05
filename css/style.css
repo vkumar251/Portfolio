@@ -18,7 +18,7 @@ header
     padding: 30px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; 
 }
 section
 {
@@ -28,13 +28,16 @@ section
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background-color: rgb(0, 28, 29); /* To be switched to background: url(image url.jpg); */
+    background-color: rgb(0, 28, 29);
     background-size: cover;
     background-position: center;
 }
 
 /* NAVIGATION */
-
+header .divNav
+{
+	margin-left: auto; /* Align navigation to the right */
+}
 header .divNav a /* Navigation anchors */
 {
     color: white;
@@ -47,7 +50,7 @@ header .divNav a /* Navigation anchors */
     padding-bottom: 2px;
     padding-left: 15px;
     padding-right: 15px;
-    
+
     transition: 0.3s;
     transition-property: background;
 }
@@ -99,18 +102,23 @@ label .close-button
     position: none;
 }
 
+/* CONTAINER */
+
+.divContainer
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 60px 5%;
+}
+
 /* CONTENT */
 
 .divContent
 {
-    max-width: 35%;
-
-    margin-top: 60px;
-    margin-bottom: 60px;
-    margin-left: 5%;
-    margin-right: 100px;
-
-    border: white 5px solid; /* TEMPORARY BORDER - to be deleted */
+    width: 50%; /* Adjust width to fit all devices */
+    max-width: 700px;
+    margin: 0;
 }
 
 /* LEFT DIVISION */
@@ -165,14 +173,8 @@ label .close-button
 
 .divImage
 {
-    max-width: 65%;
-
-    margin-top: 60px;
-    margin-bottom: 60px;
-    margin-left: 45%;
-    margin-right: 100px;
-
-    border: white 5px solid; /* TEMPORARY BORDER - to be deleted */
+    width: 45%;
+    margin: 0;
 }
 
 /* MEDIA */
